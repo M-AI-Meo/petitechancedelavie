@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Petite chance de la vie</title>
+  <style>
+    :root {
+      --blue:#A8DADC;
+      --yellow:#FFE066;
+      --accent:#E76F51;
+      --dark:#1D3557;
+      font-family: "Poppins", Arial, sans-serif;
+    }
+    body {
+      margin:0;
+    background:#fff;
+    color:var(--dark);
+    -webkit-font-smoothing:antialiased;
+    }
+    .hero {
+      display:flex;
+      align-items:center;
+      gap:32px;
+      padding:48px;
+      max-width:1100px;
+      margin:40px auto;
+    }
+    .logo {
+      flex:0 0 200px;
+      text-align:center;
+    }
+    .logo img {
+      width:160px;
+      border-radius:16px;
+    }
+    .logo h1 {
+      margin:12px 0 4px;
+      font-size:20px;
+      letter-spacing:0.5px;
+    }
+    .small {
+      font-size:13px;
+      color:#666;
+      margin-top:4px;
+    }
+    .content { flex:1 }
+    h2 { margin:0 0 12px; font-size:28px }
+    p.lead { margin:0 0 18px; color:#333; line-height:1.4 }
+    .actions {
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .btn {
+      display:inline-block;
+      padding:12px 18px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+    }
+    .btn-donate {
+      background:var(--accent);
+      color:white;
+    }
+    .btn-join {
+      background:transparent;
+      border:2px solid var(--dark);
+      color:var(--dark);
+    }
+    .cards {
+      display:flex;
+      gap:12px;
+      margin-top:24px;
+    }
+    .card {
+      flex:1;
+      padding:14px;
+      border-radius:10px;
+      background:#FAFAFA;
+      border:1px solid #eee;
+    }
+    footer {
+      max-width:1100px;
+      margin:24px auto;
+      text-align:center;
+      color:#666;
+      font-size:14px;
+      padding:12px;
+    }
+    @media(max-width:760px){
+      .hero{flex-direction:column;align-items:flex-start}
+      .logo{order:0}
+    }
+
+  </style>
+
+</head>
+<body>
+  <section class="hero">
+    <div class="logo">
+      <img src="logo Petite chance.png" alt="Logo Petite chance de la vie" />
+           <div class="small"><em>L'espoir ne connaît pas de frontières</em></div>
+    
+</div>
+
+    <div class="content">
+      <h2>Donner une chance aux enfants atteints du cancer</h2>
+      <p class="lead">
+        Nous relions des familles des pays en développement à des centres médicaux en Europe,
+        accompagnons les démarches et cherchons des solutions pour que chaque enfant ait une chance de guérison.
+      </p>
+
+      <div class="actions">
+        <a class="btn btn-donate" href="https://example.org/donate" target="_blank" rel="noopener">Faire un don</a>
+        <a class="btn btn-join" href="mailto:contact@petitechancedelavie.org">S'inscrire / Nous contacter</a>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <strong>400 000</strong>
+          <div class="small">enfants diagnostiqués chaque année</div>
+        </div>
+        <div class="card">
+          <strong>&lt;30%</strong>
+          <div class="small">taux de guérison dans les pays à faible revenu</div>
+        </div>
+        <div class="card">
+          <strong>Un pont</strong>
+          <div class="small">informations, accompagnement, espoir</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © Petite chance de la vie • petitechancedelavie.org
+  </footer>
+</body>
+</html>
